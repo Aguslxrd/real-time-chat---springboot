@@ -8,5 +8,5 @@ import lombok.Data;
 public class ChatMessageDTO {
 
     private String message;
-    private String username;
+    private String user;
 }

@@ -16,7 +16,8 @@ public class WebSocketController {
     @SendTo("/topic/{roomId}")
     public ChatMessageDTO chat(@DestinationVariable String roomId, ChatMessageDTO message){
 
-        System.out.println(message.getMessage() + " " +  message.getUsername());
-        return new ChatMessageDTO(message.getMessage(), message.getUsername());
+        System.out.println(message.getMessage() + " " +  message.getUser());
+        return new ChatMessageDTO(message.getMessage(), message.getUser()
+        git comm);
     }
 }
